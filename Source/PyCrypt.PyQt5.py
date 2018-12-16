@@ -295,7 +295,7 @@ class EncryptMenu(QWidget):
         super().__init__()
         self.File = None
         self.KeyFile = None
-        center(300, 200)
+        center(self, 300, 200)
         self.EncryptMenu()
 
     def GetFile(self):
@@ -391,7 +391,7 @@ class DecryptMenu(QWidget):
         self.File = None
         self.KeyFile = None
         self.Passphrase = None
-        center(350, 300)
+        center(self, 350, 300)
         self.DecryptMenu()
 
     def GetFile(self):
